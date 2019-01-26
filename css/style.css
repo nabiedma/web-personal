@@ -1,0 +1,94 @@
+body {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #17b890;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+/* ------------------------ */
+/* HEADER */
+/* ------------------------ */
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(157, 197, 187);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(157,197,187, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav img {
+    width: auto;
+    height: 50px;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(70, 96, 95, 0.40), rgba(70, 96, 95, 0.25)), url(img/bgheader.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav li {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+nav li a:link, nav li a:visited {
+    text-decoration: none;
+    color: #dee5e5;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+nav li a:hover, nav li a:active {
+    color: #9dc5bb;
+}
+
+.title {
+    height: 90vh;
+}
+
+.title-thin, .title-strong {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-thin {
+    font-weight: 300;
+    font-size: 38px;
+}
+
+.title-strong {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+/* ------------------------ */
+/* SECTION - SOBRE MI */
+/* ------------------------ */
+
+.section-aboutme {
+    background: #5e807f;
+    padding-top: 50px;
+    height: 500px;
+}
