@@ -14,11 +14,12 @@ h2 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #17b890;
+    background-color: #000;
     content: " ";
     width: 100px;
     margin: 0 auto;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -36,6 +37,10 @@ h2:after {
 nav img {
     width: auto;
     height: 50px;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.8);
 }
 
 header {
@@ -61,7 +66,7 @@ nav li a:link, nav li a:visited {
 }
 
 nav li a:hover, nav li a:active {
-    color: #9dc5bb;
+    color: #17b890;
 }
 
 .title {
@@ -89,6 +94,67 @@ nav li a:hover, nav li a:active {
 
 .section-aboutme {
     background: #5e807f;
-    padding-top: 50px;
+    color: #fff;
+    padding: 90px 0 ;
+}
+
+.section-aboutme h2 {
+    color: #17b890;
+}
+
+.text-aboutme {
+    font-size: 18px;
+}
+
+/* ------------------------ */
+/* SECTION - SCROLL IMAGE */
+/* ------------------------ */
+
+.section-image {
     height: 500px;
+    background-image: linear-gradient(rgba(23, 184, 144, 0.30), rgba(23, 184, 144, 0.35)), url(img/image-scroll-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ------------------------ */
+/* SECTION - SERVICIOS */
+/* ------------------------ */
+
+.section-services {
+    background-color: #dee5e5;
+    color: #000;
+    padding: 90px 0;
+}
+
+.section-services h2:after {
+    display: block;
+    height: 2px;
+    background-color: #17b890;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.section-services i {
+    font-size: 32px;
+    color: #17b890;
+    display: block;
+    text-align: center;
+}
+
+.section-services h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section-services .servicio {
+    background-color: #e4ecec;
+    box-shadow: 3px 3px #192121;
+    padding: 15px;
 }
