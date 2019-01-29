@@ -36,11 +36,11 @@ h2:after {
 
 nav img {
     width: auto;
-    height: 50px;
+    height: 40px;
 }
 
 nav {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
 }
 
 header {
@@ -52,7 +52,7 @@ header {
 }
 
 nav li {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     margin-left: 5px;
 }
@@ -157,4 +157,28 @@ nav li a:hover, nav li a:active {
     background-color: #e4ecec;
     box-shadow: 3px 3px #192121;
     padding: 15px;
+}
+
+
+/* ------------------------ */
+/* SECTION - PORTFOLIO */
+/* ------------------------ */
+
+.section-portfolio {
+  background: #5e807f;
+  color: #fff;
+  padding: 90px 0;
+}
+
+.section-portfolio h2 {
+  color: #17b890;
+}
+
+/* ------------------------ */
+/* ----- MEDIA QUERY ----- */
+/* ------------------------ */
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+
 }
