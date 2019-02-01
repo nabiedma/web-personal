@@ -165,13 +165,34 @@ nav li a:hover, nav li a:active {
 /* ------------------------ */
 
 .section-portfolio {
-  background: #5e807f;
+  background-color: #5e807f;
   color: #fff;
   padding: 90px 0;
 }
 
 .section-portfolio h2 {
   color: #17b890;
+}
+
+/* ------------------------ */
+/* SECTION - CONTACTO */
+/* ------------------------ */
+
+.section-contact {
+  background-color: #dee5e5;
+  color: #000;
+  padding: 90px 0;
+}
+
+.section-contact h2:after {
+    display: block;
+    height: 2px;
+    background-color: #17b890;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* ------------------------ */
