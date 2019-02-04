@@ -196,6 +196,34 @@ nav li a:hover, nav li a:active {
 }
 
 /* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+
+footer {
+  background-color: #253332;
+  padding: 20px 0;
+}
+
+.footer-links, .footer-social {
+  list-style-type: none;
+
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
+.footer-links a, .footer-social a {
+  color: #a4b4b2;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+
+/* ------------------------ */
 /* ----- MEDIA QUERY ----- */
 /* ------------------------ */
 
