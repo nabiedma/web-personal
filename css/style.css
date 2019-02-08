@@ -150,6 +150,7 @@ nav li a:hover, nav li a:active {
     color: #17b890;
     display: block;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .section-services h3 {
