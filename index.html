@@ -31,7 +31,7 @@
       <nav class="navbar navbar-expand-md fixed-top" id="myNavbar">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="img/logo.png" class="logo-image" alt="Alejandro Biedma" height="40">
+            <img src="img/logo.png" class="" alt="Alejandro Biedma">
           </a>
 
           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Navegacion">
@@ -88,6 +88,10 @@
               Me encanta diseñar y programar sitios web. Creo firmemente que en la actualidad una página web es obligatoria para
               todos. Desde un humorista, un chef, una empresa de transporte o incluso una organización multinacional
             </p>
+            <p class="text-justify text-aboutme">
+                Mi objetivo es generar o mejorar tu presencia digital y ayudarte a construir bases sólidas con las cuales lograr
+                más visitas, más clientes, más oportunidades y una comunicación digital que de resultados positivos.
+            </p>
           </div>
         </div>
       </div>
@@ -113,24 +117,37 @@
             <i class="fas fa-code"></i>
             <h3 class="servicio-title text-center">Diseño Web</h3>
             <p class="servicio-text text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus cumque voluptas, nesciunt magnam rerum blanditiis voluptate aliquid voluptatibus
-              asperiores, laudantium obcaecati, eveniet vitae modi?
+              Hoy en día es muy importante tener un sitio web moderno y que se adapte a los nuevos dispositivos.
+            </p>
+            <p class="servicio-text text-justify">
+              Creemos que todos pueden tener un sitio web. Podemos diseñar páginas web simples, responsive, con diseños elegantes y atractivos que llamen la atención de los
+              clientes y los usuarios de internet. Mi misión es elevar y mejorar tu presencia digital.
             </p>
           </div>
           <div class="col-3 servicio">
             <i class="fas fa-laptop"></i>
             <h3 class="servicio-title text-center">Consultoría Informática</h3>
               <p class="servicio-text text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus cumque voluptas, nesciunt magnam rerum blanditiis voluptate aliquid voluptatibus
-                  asperiores, laudantium obcaecati, eveniet vitae modi?
+                Las herramientas informáticas son parte de todas las empresas, organizaciones y trabajos que se realizan. Queremos que estas herramientas sean de utilidad
+                y gran ayuda a la hora de realizar sus proyectos.
+              </p>
+              <p class="servicio-text text-justify">
+                Te ofrezco asesoramiento para la utilización de aplicaciones y programas informáticas que mejoren la productividad y faciliten tu trabajo.
               </p>
             </div>
             <div class="col-3 servicio">
               <i class="fas fa-comments-dollar"></i>
               <h3 class="servicio-title text-center">Marketing Redes Sociales</h3>
                 <p class="servicio-text text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus cumque voluptas, nesciunt magnam rerum blanditiis voluptate aliquid voluptatibus
-                    asperiores, laudantium obcaecati, eveniet vitae modi?
+                  Quizás te preguntes, ¿Por qué mi negocio o servicio no está obteniendo la atención que deseo? La respuesta es simple: Hace falta una estrategia
+                  de marketing.
+                </p>
+                <p class="servicio-text text-justify">
+                  Una buena Estrategia de Marketing en las Redes Sociales debe ayudarnos a alcanzar los objetivos que nos hemos planteado para nuestro negocio.
+                </p>
+                <p class="servicio-text text-justify">
+                  El conocimiento del cliente potencial y de sus necesidades es un factor importantisimo a la hora de crear una buena estrategia. Toda Estrategia de
+                  Redes Sociales necesita tener claro los objetivos.
                 </p>
               </div>
         </div>
@@ -177,7 +194,7 @@
         <div class="row">
           <div class="col">
             <p class="text-center"><i class="fas fa-lightbulb mr-2"></i>¿Querés que trabajemos juntos en algún proyecto o idea que tengas?<i class="fas fa-lightbulb ml-2"></i></p>
-            <p class="text-center">Ponete en contacto conmigo a través del siguiente formulario</p>
+            <p class="text-center">¡Usá el siguiente formulario para contactarme!</p>
           </div>
         </div>
         <div class="row">
@@ -185,23 +202,39 @@
             <!-- FORMULARIO DE CONTACTO -->
             <form method="post">
               <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Tu Nombre">
+                <div class="col-12 col-md-6 pt-2">
+                  <input type="text" class="form-control" name="formNombre" id="formNombre" placeholder="Tu Nombre">
                 </div>
-                <div class="col">
-                  <input type="email" class="form-control" placeholder="Tu E-mail">
+                <div class="col-12 col-md-6 pt-2">
+                  <input type="email" class="form-control" name="formMail" id="formMail" placeholder="Tu E-mail">
                   <small id="emailHelp" class="form-text text-muted">¡Tranquil@! No compartiré tu dirección con nadie.</small>
                 </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-
+              </div>
+              <div class="row">
+                  <div class="col pt-2">
+                    <label for="formConsulta">Tu Consulta:</label>
+                    <select class="form-control" name="formConsulta" id="formConsulta">
+                      <option value="general">General</option>
+                      <option value="contrataciones">Diseño Web</option>
+                      <option value="publicidad">Consultoría</option>
+                      <option value="otro">Marketing Redes Sociales</option>
+                      <option value="otro">Otra</option>
+                    </select>
                   </div>
-                </div>
+              </div>
+              <div class="row">
+                  <div class="col pt-2">
+                    <textarea class="form-control" style="max-height:300px; min-height:100px;" placeholder="Tu Mensaje" name="formMensaje" id="formMensaje" rows="5"></textarea>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                    <input type="submit" name="submit" class="btn btn-info float-right mt-3" value="Enviar">
+                  </div>
               </div>
             </form>
-            <!-- FIN de FORMULARIO DE CONTACTO -->
           </div>
+            <!-- FIN de FORMULARIO DE CONTACTO -->
         </div>
       </div>
     </section>
