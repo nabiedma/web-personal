@@ -119,6 +119,26 @@ nav li a:hover, nav li a:active {
     font-size: 18px;
 }
 
+.social-aboutme a {
+  padding: 0 10px;
+  margin: 0;
+  color: #fff;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.social-aboutme a:last-child {
+  padding: 0 0 0 10px;
+}
+
+.social-aboutme a {
+  font-size: 32px;
+}
+
+.social-aboutme a:hover {
+  color: #17b890;
+}
+
 /* ------------------------ */
 /* SECTION - SCROLL IMAGE */
 /* ------------------------ */
@@ -171,6 +191,7 @@ nav li a:hover, nav li a:active {
     background-color: #e4ecec;
     box-shadow: 3px 3px #192121;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 
