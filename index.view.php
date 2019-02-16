@@ -217,7 +217,7 @@
         <div class="row">
           <div class="col">
             <!-- FORMULARIO DE CONTACTO -->
-            <form method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
               <div class="row">
                 <div class="col-12 col-md-6 pt-2">
                   <input type="text" class="form-control" name="formNombre" id="formNombre" placeholder="Tu Nombre">
