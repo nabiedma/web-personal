@@ -244,8 +244,19 @@
                     <textarea class="form-control" style="max-height:400px; min-height:100px;" placeholder="Tu Mensaje" name="formMensaje" id="formMensaje" rows="5"></textarea>
                   </div>
               </div>
+                <?php if (!empty($errores)): ?>
+                <div class="row justify-content-center">
+                    <div class="col-6 form-error">
+                        <?php echo '<p class="text-center">'.$errores.'</p>'; ?>
+                    </div>
+                <?php elseif($enviado): ?>
+                    <div class="col-6 form-exito">
+                        <p class="text-center">¡Su formulario ha sido enviado correctamente!</p>
+                    </div>
+                </div>
+                <?php endif ?>
               <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <input type="submit" name="submit" class="btn btn-info float-right mt-3" value="Enviar">
                   </div>
               </div>

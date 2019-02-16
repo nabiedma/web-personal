@@ -236,6 +236,14 @@ nav li a:hover, nav li a:active {
     margin-bottom: 20px;
 }
 
+.form-error {
+    border: 2px solid red;
+    background-color: #ff00007a;
+    color: #000;
+    margin-top: 15px;
+    padding: 10px;
+}
+
 /* ------------------------ */
 /* FOOTER */
 /* ------------------------ */
