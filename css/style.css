@@ -76,7 +76,7 @@ nav li a:hover, nav li a:active {
     height: 90vh;
 }
 
-.title-thin, .title-strong {
+.title-thin, .title-strong, .title-sub {
     text-transform: uppercase;
     text-align: center;
 }
@@ -89,6 +89,11 @@ nav li a:hover, nav li a:active {
 .title-strong {
     font-weight: 700;
     font-size: 48px;
+}
+
+.title-sub {
+    font-weight: 300;
+    font-size: 32px;
 }
 
 .scrolled {
