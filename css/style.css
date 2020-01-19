@@ -147,6 +147,7 @@ nav li a:hover, nav li a:active {
 
 .profile-pic {
     border-radius: 50%;
+    border: 2px solid #17b890;
 }
 
 /* ------------------------ */
