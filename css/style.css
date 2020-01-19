@@ -145,12 +145,16 @@ nav li a:hover, nav li a:active {
   color: #17b890;
 }
 
+.profile-pic {
+    border-radius: 50%;
+}
+
 /* ------------------------ */
 /* SECTION - SCROLL IMAGE */
 /* ------------------------ */
 
 .section-image {
-    height: 500px;
+    height: 400px;
     background-image: linear-gradient(rgba(23, 184, 144, 0.30), rgba(23, 184, 144, 0.35)), url(img/image-scroll-1.jpg);
     background-size: cover;
     background-position: center;
@@ -296,7 +300,7 @@ footer h3:after {
 
 footer i {
     color: #a4b4b2;
-    font-size: 28px;
+    font-size: 26px;
     -webkit-transition: color 0.4s;
     transition: color 0.4s;
 }
@@ -313,6 +317,11 @@ footer p {
 
 footer a:hover, footer i:hover {
     color: #fff;
+}
+
+footer a {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 /* ------------------------ */
