@@ -1,110 +1,113 @@
 body {
-    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
-    color: #fff;
-    background-color: #000;
-    position: relative;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #000;
+  position: relative;
 }
 
 h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 38px;
-    font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 700;
 }
 
 h2:after {
-    display: block;
-    height: 2px;
-    background-color: #000;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  display: block;
+  height: 2px;
+  background-color: #000;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-
 
 /* ------------------------ */
 /* HEADER */
 /* ------------------------ */
 
 .custom-toggler.navbar-toggler {
-    border-color: rgb(157, 197, 187);
+  border-color: rgb(157, 197, 187);
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(157,197,187, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 nav img {
-    width: auto;
-    height: 40px;
-    transition: all 0.5s;
+  width: auto;
+  height: 40px;
+  transition: all 0.5s;
 }
 
 nav {
-    background-color: transparent;
-    transition: all 0.5s;
+  background-color: transparent;
+  transition: all 0.5s;
 }
 
 header {
-    height: 100vh;
-    background-image: linear-gradient(rgba(70, 96, 95, 0.40), rgba(70, 96, 95, 0.25)), url(img/bgheader.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  height: 100vh;
+  background-image: linear-gradient(rgba(70, 96, 95, 0.4), rgba(70, 96, 95, 0.25)), url(img/bgheader.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 nav li {
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-left: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 5px;
 }
 
-nav li a:link, nav li a:visited {
-    text-decoration: none;
-    color: #dee5e5;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: color 0.4s;
-    transition: color 0.4s;
+nav li a:link,
+nav li a:visited {
+  text-decoration: none;
+  color: #dee5e5;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
-nav li a:hover, nav li a:active {
-    color: #17b890;
+nav li a:hover,
+nav li a:active {
+  color: #17b890;
 }
 
 .title {
-    height: 90vh;
+  height: 90vh;
 }
 
-.title-thin, .title-strong, .title-sub {
-    text-transform: uppercase;
-    text-align: center;
+.title-thin,
+.title-strong,
+.title-sub {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .title-thin {
-    font-weight: 300;
-    font-size: 38px;
+  font-weight: 300;
+  font-size: 38px;
 }
 
 .title-strong {
-    font-weight: 700;
-    font-size: 48px;
+  font-weight: 700;
+  font-size: 48px;
 }
 
 .title-sub {
-    font-weight: 300;
-    font-size: 32px;
+  font-weight: 300;
+  font-size: 32px;
 }
 
 .scrolled {
-    background-color: rgba(0,0,0,0.8);
-    transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
 }
 
 .logo-image {
-    width: auto;
-    height: 50px;
-    transition: all 0.5s;
+  width: auto;
+  height: 50px;
+  transition: all 0.5s;
 }
 
 /* ------------------------ */
@@ -112,17 +115,17 @@ nav li a:hover, nav li a:active {
 /* ------------------------ */
 
 .section-aboutme {
-    background: #5e807f;
-    color: #fff;
-    padding: 90px 0 ;
+  background: #5e807f;
+  color: #fff;
+  padding: 90px 0;
 }
 
 .section-aboutme h2 {
-    color: #17b890;
+  color: #17b890;
 }
 
 .text-aboutme {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .social-aboutme a {
@@ -146,8 +149,8 @@ nav li a:hover, nav li a:active {
 }
 
 .profile-pic {
-    border-radius: 50%;
-    border: 2px solid #17b890;
+  border-radius: 50%;
+  border: 2px solid #17b890;
 }
 
 /* ------------------------ */
@@ -155,11 +158,11 @@ nav li a:hover, nav li a:active {
 /* ------------------------ */
 
 .section-image {
-    height: 400px;
-    background-image: linear-gradient(rgba(23, 184, 144, 0.30), rgba(23, 184, 144, 0.35)), url(img/image-scroll-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  height: 400px;
+  background-image: linear-gradient(rgba(23, 184, 144, 0.3), rgba(23, 184, 144, 0.35)), url(img/image-scroll-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* ------------------------ */
@@ -167,49 +170,50 @@ nav li a:hover, nav li a:active {
 /* ------------------------ */
 
 .section-services {
-    background-color: #dee5e5;
-    color: #000;
-    padding: 90px 0;
+  background-color: #dee5e5;
+  color: #000;
+  padding: 90px 0;
 }
 
 .section-services h2:after {
-    display: block;
-    height: 2px;
-    background-color: #17b890;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  display: block;
+  height: 2px;
+  background-color: #17b890;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .section-services i {
-    font-size: 32px;
-    color: #17b890;
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
+  font-size: 32px;
+  color: #17b890;
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .section-services h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .section-services .servicio {
-    background-color: #e4ecec;
-    padding: 15px;
-    margin-bottom: 25px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+  background-color: #e4ecec;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 .section-services .servicio:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #d0e0e0;
 }
-
 
 /* ------------------------ */
 /* SECTION - PORTFOLIO */
@@ -236,23 +240,23 @@ nav li a:hover, nav li a:active {
 }
 
 .section-contact h2:after {
-    display: block;
-    height: 2px;
-    background-color: #17b890;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  display: block;
+  height: 2px;
+  background-color: #17b890;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .form-error {
-    border: 2px solid red;
-    background-color: #ff00007a;
-    color: #000;
-    margin-top: 15px;
-    padding: 10px;
-    display: block;
+  border: 2px solid red;
+  background-color: #ff00007a;
+  color: #000;
+  margin-top: 15px;
+  padding: 10px;
+  display: block;
 }
 
 /* ------------------------ */
@@ -266,7 +270,6 @@ footer {
 
 .foot-social {
   list-style-type: none;
-
 }
 
 footer ul {
@@ -274,21 +277,21 @@ footer ul {
 }
 
 footer h3 {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #a4b4b2;
-    text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #a4b4b2;
+  text-align: center;
 }
 
 footer h3:after {
-    display: block;
-    height: 1px;
-    background-color: #a4b4b2;
-    content: " ";
-    width: 50px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  display: block;
+  height: 1px;
+  background-color: #a4b4b2;
+  content: " ";
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .foot-social a {
@@ -300,29 +303,30 @@ footer h3:after {
 }
 
 footer i {
-    color: #a4b4b2;
-    font-size: 26px;
-    -webkit-transition: color 0.4s;
-    transition: color 0.4s;
+  color: #a4b4b2;
+  font-size: 26px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 footer .foot-contact i {
-    font-size: 105%;
-    margin-right: 10px;
+  font-size: 105%;
+  margin-right: 10px;
 }
 
 footer p {
-    color: #a4b4b2;
-    font-size: 85%;
+  color: #a4b4b2;
+  font-size: 85%;
 }
 
-footer a:hover, footer i:hover {
-    color: #fff;
+footer a:hover,
+footer i:hover {
+  color: #fff;
 }
 
 footer a {
-    padding-left: 8px;
-    padding-right: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 /* ------------------------ */
@@ -331,5 +335,4 @@ footer a {
 
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
-
 }
