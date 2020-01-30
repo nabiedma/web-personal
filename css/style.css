@@ -120,6 +120,10 @@ nav li a:active {
   padding: 90px 0;
 }
 
+.section-aboutme:after {
+  opacity: 0.3;
+}
+
 .section-aboutme h2 {
   color: #17b890;
 }
@@ -225,9 +229,78 @@ nav li a:active {
   padding: 90px 0;
 }
 
+.section-portfolio img {
+  backface-visibility: hidden;
+}
+
 .section-portfolio h2 {
   color: #17b890;
 }
+
+/* Custom Button */
+.section-portfolio .btn {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.section-portfolio .portfolio-square:hover .btn {
+  opacity: 1;
+}
+
+.section-portfolio .btn-custom {
+  border-color: #17b890;
+  color: #17b890;
+}
+
+.section-portfolio .btn-custom:hover {
+  background-color: #3bd3ad;
+  color: #000;
+  border-color: #3bd3ad;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.portfolio-square:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-title {
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  top: 100px;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolio-square:hover .portfolio-title {
+  top: 75px;
+  opacity: 1;
+}
+
+/* ************* */
 
 /* ------------------------ */
 /* SECTION - CONTACTO */
