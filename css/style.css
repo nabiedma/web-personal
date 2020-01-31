@@ -295,8 +295,25 @@ nav li a:active {
   transition: all 0.5s ease;
 }
 
+.portfolio-subtitle {
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  top: 130px;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
 .portfolio-square:hover .portfolio-title {
-  top: 75px;
+  top: 50px;
+  opacity: 1;
+}
+
+.portfolio-square:hover .portfolio-subtitle {
+  top: 90px;
   opacity: 1;
 }
 
