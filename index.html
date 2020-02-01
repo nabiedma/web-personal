@@ -253,7 +253,7 @@
         <div class="row">
           <div class="col">
             <!-- FORMULARIO DE CONTACTO -->
-            <form id="contact-form" action="contact.php" method="post" role="form">
+            <form id="contact-form" action="./contacto.php" method="POST" role="form">
               <div class="row">
                 <div class="messages"></div>
                 <div class="col-12 col-md-6 pt-2">
@@ -294,14 +294,14 @@
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12">
-                  <input type="submit" name="submit" class="btn btn-info float-right mt-3" value="Enviar" />
+              <div class="row mt-2 justify-content-start">
+                <div class="col-3">
+                  <div id="g-recaptcha" class="g-recaptcha"></div>
                 </div>
               </div>
-              <div class="row mt-2 justify-content-end">
-                <div class="col-3">
-                  <p class="text-right">ACA VA EL RECAPTCHA</p>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <input type="submit" name="submit" class="btn btn-info float-right mt-3" value="Enviar" />
                 </div>
               </div>
             </form>
@@ -355,6 +355,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/contact.js"></script>
-    <script></script>
+
+    <!-- Google Recaptcha -->
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render("g-recaptcha", {
+          sitekey: "6LfzUtQUAAAAAJsf3lqLiVea34LX4bnbskimJefm",
+          theme: "light"
+        });
+      };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
   </body>
 </html>
