@@ -31,7 +31,7 @@ $(document).ready(function(){
 
   window.onload = function setYear() {
     let d = new Date();
-  let year = d.getFullYear();
+    let year = d.getFullYear();
 
-  document.getElementById('this-year').innerHTML = year;
+    document.getElementById('this-year').innerHTML = year;
   }
