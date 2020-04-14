@@ -28,10 +28,10 @@ h2:after {
 /* ------------------------ */
 
 .custom-toggler.navbar-toggler {
-  border-color: rgb(157, 197, 187);
+  border-color: rgb(23, 202, 183);
 }
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(157,197,187, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(23,202,183, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 nav img {
@@ -70,7 +70,7 @@ nav li a:visited {
 
 nav li a:hover,
 nav li a:active {
-  color: #17b890;
+  color: #17cab7;
 }
 
 .title {
@@ -125,7 +125,7 @@ nav li a:active {
 }
 
 .section-aboutme h2 {
-  color: #17b890;
+  color: #17cab7;
 }
 
 .text-aboutme {
@@ -149,12 +149,11 @@ nav li a:active {
 }
 
 .social-aboutme a:hover {
-  color: #17b890;
+  color: #17cab7;
 }
 
 .profile-pic {
   border-radius: 50%;
-  border: 2px solid #17b890;
 }
 
 /* ------------------------ */
@@ -182,7 +181,7 @@ nav li a:active {
 .section-services h2:after {
   display: block;
   height: 2px;
-  background-color: #17b890;
+  background-color: #17cab7;
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -192,7 +191,7 @@ nav li a:active {
 
 .section-services i {
   font-size: 32px;
-  color: #17b890;
+  color: #17cab7;
   display: block;
   text-align: center;
   padding-bottom: 10px;
@@ -234,7 +233,7 @@ nav li a:active {
 }
 
 .section-portfolio h2 {
-  color: #17b890;
+  color: #17cab7;
 }
 
 /* Custom Button */
@@ -257,8 +256,8 @@ nav li a:active {
 }
 
 .section-portfolio .btn-custom {
-  border-color: #17b890;
-  color: #17b890;
+  border-color: #17cab7;
+  color: #17cab7;
 }
 
 .section-portfolio .btn-custom:hover {
@@ -332,7 +331,7 @@ nav li a:active {
 .section-contact h2:after {
   display: block;
   height: 2px;
-  background-color: #17b890;
+  background-color: #17cab7;
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -347,6 +346,14 @@ nav li a:active {
   margin-top: 15px;
   padding: 10px;
   display: block;
+}
+
+.section-contact form input[type="text"],
+.section-contact form input[type="email"],
+.section-contact form select,
+.section-contact form textarea {
+  outline: 0;
+  border: 1px solid #17cab7;
 }
 
 /* ------------------------ */
@@ -369,14 +376,14 @@ footer ul {
 footer h3 {
   font-size: 14px;
   text-transform: uppercase;
-  color: #a4b4b2;
+  color: #74cfc6;
   text-align: center;
 }
 
 footer h3:after {
   display: block;
   height: 1px;
-  background-color: #a4b4b2;
+  background-color: #74cfc6;
   content: " ";
   width: 50px;
   margin: 0 auto;
@@ -385,7 +392,7 @@ footer h3:after {
 }
 
 .foot-social a {
-  color: #a4b4b2;
+  color: #74cfc6;
   text-decoration: none;
   font-weight: 300;
   -webkit-transition: color 0.4s;
@@ -393,7 +400,7 @@ footer h3:after {
 }
 
 footer i {
-  color: #a4b4b2;
+  color: #74cfc6;
   font-size: 26px;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
@@ -405,7 +412,7 @@ footer .foot-contact i {
 }
 
 footer p {
-  color: #a4b4b2;
+  color: #74cfc6;
   font-size: 85%;
 }
 

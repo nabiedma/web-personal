@@ -28,6 +28,19 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,700" rel="stylesheet" />
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript">
+      var verifyCallback = function (response) {
+        alert(response);
+      };
+      var onloadCallback = function () {
+        grecaptcha.render("g-recaptcha", {
+          sitekey: "6LfzUtQUAAAAAJsf3lqLiVea34LX4bnbskimJefm",
+          callback: verifyCallback,
+          theme: "light",
+        });
+      };
+    </script>
   </head>
   <body data-spy="scroll" data-target="#myNav">
     <header id="inicio">
@@ -81,12 +94,12 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>Sobre Mi</h2>
+            <h2 class="wow slideInRight">Sobre Mi</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-4 pb-4 pb-md-0">
-            <img src="img/profile-pic.jpg" alt="Perfil" width="250" height="250" class="mx-auto d-block img-fluid profile-pic" />
+            <img src="img/profile-pic.jpg" alt="Perfil" width="250" height="250" class="mx-auto d-block img-fluid profile-pic animated wow fadeInDown" />
           </div>
           <div class="col-12 col-md-8 align-self-center">
             <p class="text-justify text-aboutme">
@@ -101,10 +114,10 @@
         </div>
         <div class="row justify-content-md-end justify-content-center">
           <div class="col-8 col-md-4 social-aboutme d-flex">
-            <a href="#" class="ml-auto" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="ml-auto" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="ml-auto" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" class="ml-auto" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nestor-alejandro-biedma-086529156" class="ml-auto" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/ale_biedma" class="ml-auto" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/nabiedma" class="ml-auto" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/alejandrobiedma" class="ml-auto" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -120,11 +133,11 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>¿Qué Hago?</h2>
+            <h2 class="wow slideInLeft">¿Qué Hago?</h2>
           </div>
         </div>
         <div class="row justify-content-around">
-          <div class="col-11 col-lg-5 servicio">
+          <div class="col-11 col-lg-5 servicio px-4">
             <i class="fas fa-code"></i>
             <h3 class="servicio-title text-center">Diseño Web</h3>
             <p class="servicio-text text-justify">
@@ -135,7 +148,7 @@
               productos y servicios de forma masiva y más simple.
             </p>
           </div>
-          <div class="col-11 col-lg-5 servicio">
+          <div class="col-11 col-lg-5 servicio px-4">
             <i class="fas fa-laptop"></i>
             <h3 class="servicio-title text-center">Consultoría Informática</h3>
             <p class="servicio-text text-justify">
@@ -148,20 +161,23 @@
           </div>
         </div>
         <div class="row justify-content-around">
-          <div class="col-11 col-lg-5 servicio">
-            <i class="fas fa-code"></i>
-            <h3 class="servicio-title text-center">Diseño Web</h3>
+          <div class="col-11 col-lg-5 servicio px-4">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3 class="servicio-title text-center">Diseño de Aplicaciones</h3>
             <p class="servicio-text text-justify">
-              Hoy en día es muy importante tener un sitio web moderno y que se adapte a los nuevos dispositivos.
+              Muchas personas, startups o empresas necesitan aplicaciones que estén diseñadas a su medida.
             </p>
             <p class="servicio-text text-justify">
-              Creemos que todos pueden tener un sitio web. Podemos diseñar páginas web simples, responsive, con diseños elegantes y atractivos que llamen la atención de los clientes y los usuarios de
-              internet. Mi misión es elevar y mejorar tu presencia digital.
+              Estamos dispuestos a generar programas y aplicaciones web que puedan serle útil, ya sea para poder organizar sus productos, mostrar sus servicios, llevar los números de la organización,
+              y más!
+            </p>
+            <p class="servicio-text text-justify">
+              Depende de sus necesidades, podemos generar una aplicación de escritorio para Windows o puede ser muy útil una aplicación web, que podrá utilizar en cualquier ambiente.
             </p>
           </div>
-          <div class="col-11 col-lg-5 servicio">
+          <div class="col-11 col-lg-5 servicio px-4">
             <i class="fas fa-comments-dollar"></i>
-            <h3 class="servicio-title text-center">Marketing Redes Sociales</h3>
+            <h3 class="servicio-title text-center">Marketing Digital</h3>
             <p class="servicio-text text-justify">
               Quizás te preguntes, ¿Por qué mi negocio o servicio no está obteniendo la atención que deseo? La respuesta es simple: Hace falta una estrategia de marketing.
             </p>
@@ -183,7 +199,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>Portfolio</h2>
+            <h2 class="wow slideInRight">Portfolio</h2>
           </div>
         </div>
       </div>
@@ -239,7 +255,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>Contacto</h2>
+            <h2 class="wow slideInRight">Contacto</h2>
           </div>
         </div>
         <div class="row">
@@ -253,7 +269,7 @@
         <div class="row">
           <div class="col">
             <!-- FORMULARIO DE CONTACTO -->
-            <form id="contact-form" action="./contacto.php" method="POST" role="form">
+            <form id="contact-form" action="./back/contacto.php" method="POST" role="form">
               <div class="row">
                 <div class="messages"></div>
                 <div class="col-12 col-md-6 pt-2">
@@ -283,7 +299,7 @@
                 <div class="col pt-2">
                   <textarea
                     class="form-control"
-                    style="max-height:400px; min-height:100px;"
+                    style="max-height: 400px; min-height: 100px;"
                     placeholder="Tu Mensaje"
                     name="formMensaje"
                     id="formMensaje"
@@ -301,7 +317,7 @@
               </div>
               <div class="row mt-2">
                 <div class="col-12">
-                  <input type="submit" name="submit" class="btn btn-info float-right mt-3" value="Enviar" />
+                  <input type="submit" name="submit" class="btn btn-info float-right mt-3 text-uppercase" value="Enviar" />
                 </div>
               </div>
             </form>
@@ -317,19 +333,19 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-5 col-lg-4 pb-2">
-            <h3>Redes Sociales</h3>
-            <ul class="foot-social navbar ml-auto">
+            <h3 class="wow fadeIn">Redes Sociales</h3>
+            <ul class="foot-social navbar ml-auto wow fadeIn">
               <li class="nav-item">
-                <a href="#" class="nav-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/nestor-alejandro-biedma-086529156" class="nav-link p-0" target="_blank"><i class="fab fa-linkedin"></i></a>
               </li>
               <li class="nav-item">
-                <a href="https://twitter.com/ale_biedma" class="nav-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/ale_biedma" class="nav-link p-0" target="_blank"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="nav-item">
-                <a href="https://github.com/nabiedma" class="nav-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/nabiedma" class="nav-link p-0" target="_blank"><i class="fab fa-github"></i></a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/alejandrobiedma" class="nav-link p-0" target="_blank"><i class="fab fa-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -338,17 +354,21 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <p class="text-center mb-0">&copy; Alejandro Biedma <span id="this-year"></span> - Todos los Derechos Reservados</p>
+            <p class="text-center mb-0 wow fadeIn">&copy; Alejandro Biedma <span id="this-year"></span> - Todos los Derechos Reservados</p>
           </div>
         </div>
       </div>
     </footer>
     <!-- FIN de FOOTER -->
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/custom.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
       integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
@@ -357,14 +377,14 @@
     <script src="js/contact.js"></script>
 
     <!-- Google Recaptcha -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       var onloadCallback = function() {
         grecaptcha.render("g-recaptcha", {
           sitekey: "6LfzUtQUAAAAAJsf3lqLiVea34LX4bnbskimJefm",
           theme: "light"
         });
       };
-    </script>
+    </script> -->
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
   </body>
 </html>

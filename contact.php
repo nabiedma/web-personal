@@ -14,10 +14,10 @@ $subject = 'Nuevo Mensaje desde Contact Form';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('formNombre' => 'Nombre', 'formMail' => 'Email', 'formConsulta' => 'Consulta', 'formMensaje' => 'Mensaje'); 
+$fields = array('formNombre' => 'Nombre', 'formMail' => 'Email', 'formConsulta' => 'Consulta', 'formMensaje' => 'Mensaje');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Su mensaje fue enviado. Intentaré ponerme en contacto lo más pronto posible :)';
+$okMessage = 'Su mensaje fue enviado. Me pondré en contacto lo más pronto posible :)';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'Hubo un error al enviar el formulario. Por favor, intentá de nuevo más tarde.';
@@ -29,11 +29,10 @@ $errorMessage = 'Hubo un error al enviar el formulario. Por favor, intentá de n
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
 error_reporting(E_ALL & ~E_NOTICE);
 
-try
-{
+try {
 
-    if(count($_POST) == 0) throw new \Exception('El formulario está vacío');
-            
+    if (count($_POST) == 0) throw new \Exception('El formulario está vacío');
+
     $emailText = "Tenés un nuevo mensaje desde el formulario de contacto\n=============================\n";
 
     foreach ($_POST as $key => $value) {
@@ -44,19 +43,18 @@ try
     }
 
     // All the neccessary headers for the email.
-    $headers = array('Content-Type: text/plain; charset="UTF-8";',
+    $headers = array(
+        'Content-Type: text/plain; charset="UTF-8";',
         'From: ' . $from,
         'Reply-To: ' . $from,
         'Return-Path: ' . $from,
     );
-    
+
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
-}
-catch (\Exception $e)
-{
+} catch (\Exception $e) {
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
 
