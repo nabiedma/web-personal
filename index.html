@@ -35,18 +35,6 @@
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <script type="text/javascript">
-      var verifyCallback = function (response) {
-        alert(response);
-      };
-      var onloadCallback = function () {
-        grecaptcha.render("g-recaptcha", {
-          sitekey: "6LfzUtQUAAAAAJsf3lqLiVea34LX4bnbskimJefm",
-          callback: verifyCallback,
-          theme: "light",
-        });
-      };
-    </script>
   </head>
   <body data-spy="scroll" data-target="#myNav">
     <header id="inicio">
@@ -72,7 +60,7 @@
                 <a class="nav-link" href="#servicios">¿Qué Hago?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#portfolio">Mis Trabajos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
@@ -109,8 +97,8 @@
           </div>
           <div class="col-12 col-md-8 align-self-center">
             <p class="text-justify text-aboutme">
-              Mi nombre es Alejandro. Soy estudiante de Ingenieria en Sistemas y amante de la informática y la programación. Me encanta diseñar y programar sitios web. Creo firmemente que en la
-              actualidad una página web es obligatoria para todos. Desde un humorista, un chef, una empresa de transporte o incluso una organización multinacional
+              Mi nombre es Alejandro. Soy estudiante de Ingenieria en Sistemas y amante de la informática y la programación. Me encanta diseñar y desarrollar sitios web. Creo firmemente que en la
+              actualidad una página web es obligatoria para todos. Desde un humorista, un chef, una empresa de transporte o incluso una organización multinacional, deberían tener presencia en la red.
             </p>
             <p class="text-justify text-aboutme">
               Mi objetivo es generar o mejorar tu presencia digital y ayudarte a construir bases sólidas con las cuales lograr más visitas, más clientes, más oportunidades y una comunicación digital
@@ -205,7 +193,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="wow slideInRight">Portfolio</h2>
+            <h2 class="wow slideInRight">Mis Trabajos</h2>
           </div>
         </div>
       </div>
@@ -269,65 +257,15 @@
             <p class="text-center">
               ¿Te gustaría saber más sobre mi trabajo? ¿Necesitás un presupuesto? ¿Tenés alguna idea en la que te gustaría trabajar juntos?
             </p>
-            <p class="text-center">¡Usá el siguiente formulario para contactarme!</p>
+            <p class="text-center">¡La mejor manera de contactarme sería a través de un email:</p>
+            <h3 class="text-center"><a href="mailto:nabiedma@gmail.com?Subject=Consulta">nabiedma@gmail.com</a></h3>
+
           </div>
         </div>
         <div class="row">
-          <div class="col">
-            <!-- FORMULARIO DE CONTACTO -->
-            <form id="contact-form" action="/" method="POST" role="form">
-              <div class="row justify-content-center">
-                <div class="messages"></div>
-                <div class="col-12 col-md-6 pt-2">
-                  <input type="text" class="form-control" name="formNombre" id="formNombre" placeholder="Tu Nombre" required="required" data-error="Por favor, ingrese un nombre." />
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="col-12 col-md-6 pt-2">
-                  <input type="email" class="form-control" name="formMail" id="formMail" placeholder="Tu E-mail" required="required" data-error="Por favor, ingrese un e-mail." />
-                  <small id="emailHelp" class="form-text text-muted">¡Tranquil@! No compartiré tu dirección con nadie.</small>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 pt-2">
-                  <label for="formConsulta">Tu Consulta:</label>
-                  <select class="form-control" name="formConsulta" id="formConsulta">
-                    <option value="general">General</option>
-                    <option value="web">Diseño Web</option>
-                    <option value="consultoria">Consultoría</option>
-                    <option value="marketing-cm">Marketing Redes Sociales</option>
-                    <option value="otra">Otra</option>
-                  </select>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col pt-2">
-                  <textarea
-                    class="form-control"
-                    style="max-height: 400px; min-height: 100px;"
-                    placeholder="Tu Mensaje"
-                    name="formMensaje"
-                    id="formMensaje"
-                    rows="5"
-                    required="required"
-                    data-error="Por favor, ingrese su mensaje."
-                  ></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="row mt-2 justify-content-start">
-                <div class="col-3">
-                  <div id="g-recaptcha" class="g-recaptcha"></div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-12">
-                  <input type="submit" name="submit" class="btn btn-info float-right mt-3 text-uppercase" value="Enviar" />
-                </div>
-              </div>
-            </form>
-            <!-- FIN de FORMULARIO DE CONTACTO -->
+          <div class="col-12">
+            <p class="text-center">¡También podés contactarme a través de mis redes sociales!</p>
+            <i class="fas fa-grin-beam"></i>
           </div>
         </div>
       </div>
@@ -360,7 +298,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <p class="text-center mb-0 wow fadeIn">&copy; Alejandro Biedma <span id="this-year"></span> - Todos los Derechos Reservados</p>
+            <p class="text-center mb-0 wow fadeIn">&copy; Alejandro Biedma [AB] <span id="this-year"></span> - Todos los Derechos Reservados</p>
           </div>
         </div>
       </div>
@@ -382,23 +320,5 @@
     ></script>
     <script src="./js/contact.js"></script>
 
-    <!-- Google Recaptcha -->
-    <script type="text/javascript">
-      var onloadCallback = function () {
-        grecaptcha.render("g-recaptcha", {
-          sitekey: "6LfzUtQUAAAAAJsf3lqLiVea34LX4bnbskimJefm",
-          theme: "light",
-        });
-      };
-
-      window.onload = function () {
-        var $recaptcha = document.querySelector("#g-recaptcha-response");
-
-        if ($recaptcha) {
-          $recaptcha.setAttribute("required", "required");
-        }
-      };
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
   </body>
 </html>
