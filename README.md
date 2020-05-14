@@ -1,8 +1,8 @@
 # web-personal
 Sitio web personal - Freelancer
 
-## En construcción
+## Alejandro Biedma - AB
 
-Pronto más información...
+Este repositorio contiene mi página web personal, que muestra quién soy, lo que hago y algo de mis trabajos (Portfolio).
 
 : )
