@@ -285,7 +285,7 @@ nav li a:active {
 
 .portfolio-title {
   position: absolute;
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
   top: 100px;
   text-transform: uppercase;
@@ -308,12 +308,12 @@ nav li a:active {
 }
 
 .portfolio-square:hover .portfolio-title {
-  top: 50px;
+  top: 30px;
   opacity: 1;
 }
 
 .portfolio-square:hover .portfolio-subtitle {
-  top: 90px;
+  top: 300px;
   opacity: 1;
 }
 
@@ -438,10 +438,86 @@ footer a {
   padding-right: 8px;
 }
 
+
 /* ------------------------ */
 /* ----- MEDIA QUERY ----- */
 /* ------------------------ */
 
-/* On screens that are 600px or less */
-@media screen and (max-width: 600px) {
+
+/* On screens that are 1350px or less */
+@media screen and (max-width: 1350px) {
+  /* SECTION - PORTFOLIO */
+  .portfolio-square:hover .portfolio-title {
+    top: 50px;
+    opacity: 1;
+  }
+  
+  .portfolio-square:hover .portfolio-subtitle {
+    top: 220px;
+    opacity: 1;
+  }
+}
+
+/* On screens that are 6between 992px and 1100px */
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+  /* SECTION - PORTFOLIO */
+  .portfolio-title {
+    font-size: 22px;
+  }
+  
+  .portfolio-subtitle {
+    font-size: 16px;
+  }
+  
+  .portfolio-square:hover .portfolio-title {
+    top: 20px;
+    opacity: 1;
+  }
+  
+  .portfolio-square:hover .portfolio-subtitle {
+    top: 190px;
+    opacity: 1;
+  }
+}
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+  /* SECTION - PORTFOLIO */
+  .portfolio-square:hover .portfolio-title {
+    top: 30px;
+    opacity: 1;
+  }
+  
+  .portfolio-square:hover .portfolio-subtitle {
+    top: 350px;
+    opacity: 1;
+  }
+}
+
+/* On screens that are 800px or less */
+@media screen and (max-width: 800px) {
+  /* SECTION - PORTFOLIO */
+  .portfolio-square:hover .portfolio-title {
+    top: 30px;
+    opacity: 1;
+  }
+  
+  .portfolio-square:hover .portfolio-subtitle {
+    top: 260px;
+    opacity: 1;
+  }
+}
+
+/* On screens that are 575px or less */
+@media screen and (max-width: 575px) {
+  /* SECTION - PORTFOLIO */
+  .portfolio-square:hover .portfolio-title {
+    top: 50px;
+    opacity: 1;
+  }
+  
+  .portfolio-square:hover .portfolio-subtitle {
+    top: 330px;
+    opacity: 1;
+  }
 }
