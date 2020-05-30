@@ -48,17 +48,19 @@ $(document).ready(function(){
 
 // Después de cierto punto, mostrar la NAVBAR
 $(document).scroll(function() {
-    var y = $(this).scrollTop();
+    let y = $(this).scrollTop();
     if (y > 600) {
-      $('.navbar').fadeIn();
+      $('nav').fadeIn();
     } else {
-      $('.navbar').fadeOut();
+      $('nav').fadeOut();
     }
   });
 
 // /////////////////
 
 $ (document).ready(function() {
+
+    $('nav').hide();
 
     $(".navbar-toggler").on("click", function() {
         $(".mobileMenu").toggleClass("open");
