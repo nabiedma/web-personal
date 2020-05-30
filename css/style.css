@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #1D1E18;
     color: #81FFC2;
@@ -13,7 +17,114 @@ body {
     font-family: 'Quicksand', serif;
 }
 
-main {
+.mt-120 {
+    margin-top: 120px;
+}
+
+h2.section-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 70px;
+}
+
+/* ////// NAVIGATION ////// */
+
+.icon__bars {
+    color: #81FFC2;
+    font-size: 32px;
+    transition: all .5s;
+}
+
+.icon__bars_rotated {
+    color: #81FFC2;
+    font-size: 32px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all .5s;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.nav-link {
+    color: #81FFC2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: all .5s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #558564;
+    transition: all .5s;
+}
+
+.nav-bottom-ul {
+    list-style: none;
+    transform: translateY(280px);
+}
+
+.nav-bottom-ul img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-bottom-ul span {
+    font-size: 1rem;
+}
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .mobileMenu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform: translateX(-100%);
+        transition: all ease 0.25s;
+    }
+
+    .onRight {
+        left: auto;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+    }
+
+    .open-overlay {
+        display: block;
+    }
+}
+
+/* ////// ////// ////// */
+
+/* ////// HEADER ////// */
+
+header {
     height: 100vh;
 }
 
@@ -22,25 +133,190 @@ main {
     width: 400px;
 }
 
-.man-work-img {
-    height: 300px;
-    width: 300px;
-}
-
-.title-construction {
-    font-weight: 400;
+h1.title-header {
+    font-weight: 300;
     font-size: 3rem;
 }
 
-.title-contact {
-    font-weight: 300;
-    font-size: 1.3rem;
-    display: block;
+.btn-contact {
+    color: #81FFC2;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border: solid 2px #81FFC2;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all .5s;
 }
 
-.title-contact-lg {
+.btn-contact:hover {
+    color: #1D1E18;
+    background-color: #81FFC2;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border: solid 2px #1D1E18;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-contact i {
+    font-size: 26px;
+}
+
+.icon__down_arrow {
+    font-size: 32px;
+    animation: arrowmove 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowmove {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(15px);}
+    100% {transform: translateY(1px);}
+}
+
+/* ////// ////// ////// */
+
+
+/* ////// QUIEN SOY? ////// */
+
+.section-quiensoy {
+    height: 100vh;
+}
+
+.img-profile {
+    height: 150px;
+    width: 150;
+    border-radius: 100px;
+    border: 2px solid #81FFC2;
+    margin-top: 40px;
+}
+
+.span-subtitle {
+    font-size: 1.3rem;
+}
+
+p.p-quiensoy {
+    font-size: 1.3rem;
     font-weight: 300;
-    font-size: 1.6rem;
+}
+
+.section-quiensoy a {
+    color: #81FFC2;
+    transition: .5s;
+}
+
+.section-quiensoy a:hover {
+    color: #558564;
+    transition: .5s;
+}
+
+/* ////// ////// ////// */
+
+
+/* ////// QUE HAGO? ////// */
+
+.section-quehago {
+    height: 100vh;
+}
+
+.service-box {
+    border: 2px solid #81FFC2;
+}
+
+.title-service {
+    font-size: 1.4rem;
+}
+
+.icon-service {
+    margin-top: 12px;
+    font-size: 32px;
+}
+
+.p-service {
+    font-size: 1.2rem;
+}
+
+/* ////// ////// ////// */
+
+
+/* ////// MIS TRABAJOS ////// */
+
+.section-mis-trabajos {
+    height: auto;
+}
+
+.section-mis-trabajos img {
+    width: 250px;
+    height: auto;
+    border: solid 1px #81FFC2;
+}
+
+.portfolio-box {
+    border: 2px solid #81FFC2;
+}
+
+.title-portfolio {
+    font-size: 1.4rem;
+}
+
+.icon-portfolio {
+    margin-top: 12px;
+    font-size: 32px;
+}
+
+.p-portfolio {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.link-portfolio {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+    color: #81FFC2;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.link-portfolio:hover,
+.link-portfolio:active {
+    color: #558564;
+    transition: all ease .5s;
+    text-decoration: none;
+}
+
+.p-coming {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.icon_github {
+    font-size: 40px;
+    color: #81FFC2;
+    display: block;
+    transition: all ease .5s;
+}
+
+.icon_github:hover,
+.icon_github:active {
+    color: #558564;
+    transition: all ease .5s;
+}
+
+/* ////// ////// ////// */
+
+
+/* ////// CONTACTO ////// */
+
+.section-contacto {
+    height: 100vh;
+}
+
+.section-contacto p {
+    font-weight: 300;
+    font-size: 1.3rem;
 }
 
 .contact-box {
@@ -50,7 +326,6 @@ main {
 
 .contact-box-social {
     border: 1px solid #81FFC2;
-    border-top: none;
     padding: 28px;
 }
 
@@ -61,79 +336,374 @@ main {
 .contact-social a {
     color: #81FFC2;
     text-decoration: none;
+    transition: all ease .5s;
 }
 
 .contact-social a:hover {
     color: #558564;
     text-decoration: none;
+    transition: all ease .5s;
 }
 
+.icon_contact {
+    font-size: 40px;
+    color: #81FFC2;
+    display: block;
+}
+
+/* ////// ////// ////// */
 
 /* ------------------------ */
-/* ----- MEDIA QUERY ----- */
+/* ----- MEDIA QUERIES ----- */
 /* ------------------------ */
 
 /* On screens that are 576px or less */
 @media screen and (max-width: 576px) {
-    .logo-img {
-        width: 200px;
-        height: 200px;
-    }
 
-    .title-construction {
-        font-weight: 400;
+    .logo-img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    h1.title-header {
+        font-weight: 300;
         font-size: 1.6rem;
     }
 
-    .man-work-img {
-        height: 100px;
-        width: 100px;
+    /* ////// QUE HAGO? ////// */
+
+    .ul-techs {
+        list-style: none;
     }
 
-    .title-contact-lg {
-        display: none;
+    .ul-techs li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    .ul-techs i {
+        font-size: 40px;
+        color: #81FFC2;
+    }
+
+    .techs-p {
+        font-size: 1.4rem;
+    }
+
+    .ul-techs i:hover {
+        animation: expandIcon linear 2s infinite;
+    }
+
+    @keyframes expandIcon {
+        0% {
+            transform: scale(1.0);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
+    /* ////// ////// ////// */
 }
 
 /* On screens that are greater than 577px and less than 992px */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .logo-img {
-        width: 300px;
-        height: 300px;
-    }
 
-    .title-construction {
-        font-weight: 400;
-        font-size: 2.2rem;
-    }
+        /* ////// QUE HAGO? ////// */
 
-    .man-work-img {
-        height: 200px;
-        width: 200px;
-    }
+        .ul-techs {
+            list-style: none;
+        }
+    
+        .ul-techs li {
+            display: inline-block;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    
+        .ul-techs i {
+            font-size: 42px;
+            color: #81FFC2;
+        }
 
-    .title-contact-lg {
-        display: none;
-    }
+        .techs-p {
+            font-size: 1.4rem;
+        }
+    
+        .ul-techs i:hover {
+            animation: expandIcon linear 2s infinite;
+        }
+    
+        @keyframes expandIcon {
+            0% {
+                transform: scale(1.0);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1.0);
+            }
+        }
+
+        /* ////// ////// ////// */
+
+        /* ////// CONTACTO ////// */
+
+        .section-contacto p {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    
+        .contact-box-social {
+            border: 1px solid #81FFC2;
+            padding: 40px 10px;
+        }
+    
+        .contact-social i {
+            font-size: 40px;
+        }
+    
+        /* ////// ////// ////// */
   }
 
-  /* On screens that are 993px or greater */
-@media screen and (min-width: 993px) {
-    .title-contact {
-        display: none;
+/* On screens that are 768px or greater */
+@media screen and (min-width: 768px) {
+    p.p-quiensoy {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
+
+/* On screens that are 992px or greater */
+@media screen and (min-width: 992px) {
+
+    h2.section-title {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-top: 90px;
+    }
+
+    /* ////// NAVIGATION ////// */
+
+    nav {
+        background-color: #000;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .icon__bars {
+        color: #81FFC2;
+        font-size: 32px;
+        transition: all .5s;
+    }
+
+    .icon__bars_rotated {
+        color: #81FFC2;
+        font-size: 32px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transition: all .5s;
+    }
+
+    .bg-black {
+        background-color: #000;
+    }
+
+    .nav-link {
+        color: #81FFC2;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    .nav-bottom-ul {
+        list-style: none;
+        transform: translateY(280px);
+    }
+
+    .nav-bottom-ul img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-bottom-ul span {
+        font-size: 1rem;
+    }
+
+    /* ////// ////// ////// */
+
+    /* ////// QUIEN SOY? ////// */
+
+    p.p-quiensoy {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .span-subtitle {
+        font-size: 1.6rem;
+    }
+    /* ////// ////// ////// */
+
+    /* ////// QUE HAGO? ////// */
+
+    .title-service {
+        font-size: 1.8rem;
+    }
+
+    .icon-service {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 48px;
+    }
+
+    .p-service {
+        font-size: 1.6rem;
+        text-align: justify !important;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .ul-techs {
+        list-style: none;
+    }
+
+    .techs-p {
+        font-size: 1.8rem;
+    }
+
+    .ul-techs li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ul-techs i {
+        font-size: 48px;
+        color: #81FFC2;
+    }
+
+    .ul-techs i:hover {
+        animation: expandIcon linear 2s infinite;
+    }
+
+    @keyframes expandIcon {
+        0% {
+            transform: scale(1.0);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
+    /* ////// ////// ////// */
+
+    /* ////// MIS TRABAJOS ////// */
+
+    .section-mis-trabajos img {
+        width: 500px;
+        height: auto;
+        border: solid 1px #81FFC2;
+    }
+
+    .title-portfolio {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .p-portfolio {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+    }
+    
+    .link-portfolio {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 6px;
+        color: #81FFC2;
+        display: inline-block;
+    }
+
+    .p-coming {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    .icon_github {
+        font-size: 48px;
+        color: #81FFC2;
+        display: block;
+    }
+
+    /* ////// ////// ////// */
+
+
+    /* ////// CONTACTO ////// */
+
+    .section-contacto p {
+        font-weight: 300;
+        font-size: 1.6rem;
     }
 
     .contact-box {
-        border: none;
-        padding: 5px 10px;
+        border: 1px solid #81FFC2;
+        padding: 10px 15px;
     }
-    
+
     .contact-box-social {
-        border: none;
-        padding: 28px;
+        border: 1px solid #81FFC2;
+        padding: 60px 5px;
     }
 
     .contact-social i {
-        font-size: 40px;
+        font-size: 48px;
+    }
+
+    /* ////// ////// ////// */
+
+}
+
+/* On screens that are 1200px or greater */
+@media screen and (min-width: 1200px) {
+
+    /* ////// CONTACTO ////// */
+
+    .contact-box-social {
+        border: 1px solid #81FFC2;
+        padding: 70px 5px;
+    }
+
+    /* ////// ////// ////// */
+}
+
+/* On screens that are 600px height or less */
+@media screen and (max-height: 600px) {
+    .mt-120 {
+        margin-top: 20px;
+    }
+
+    header {
+        margin-bottom: 80px;
+    }
+
+    section {
+        margin-bottom: 120px;
+    }
+
+    .section-mis-trabajos img {
+        width: 180px;
+        height: auto;
+        border: solid 1px #81FFC2;
     }
 }
