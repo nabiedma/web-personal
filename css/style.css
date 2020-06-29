@@ -351,6 +351,18 @@ p.p-quiensoy {
     display: block;
 }
 
+.mail-link {
+    color: #d3ffea;
+    text-decoration: none;
+    transition: all ease .5s;
+}
+
+.mail-link:hover {
+    color: #79d8aa;
+    text-decoration: none;
+    transition: all ease .5s;
+}
+
 /* ////// ////// ////// */
 
 /* ------------------------ */
