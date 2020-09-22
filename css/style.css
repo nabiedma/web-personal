@@ -1,721 +1,311 @@
-*,
-*:after,
-*:before {
-    padding: 0;
+/* MAIN */
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
-    background-color: #1D1E18;
-    color: #81FFC2;
-    font-weight: 300;
-    font-family: 'Quicksand', serif;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
-.mt-120 {
-    margin-top: 120px;
+.container {
+    min-width: 330px;
+    width: 85%;
+    margin: 0 auto;
 }
 
-h2.section-title {
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-top: 70px;
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #099763;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* ////// NAVIGATION ////// */
-
-.icon__bars {
-    color: #81FFC2;
-    font-size: 32px;
-    transition: all .5s;
+nav ul {
+    list-style: none;
+    color: #099763;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon__bars_rotated {
-    color: #81FFC2;
-    font-size: 32px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    transition: all .5s;
-}
-
-.bg-black {
-    background-color: #000;
+nav ul li { 
+    font-size: 24px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .nav-link {
-    color: #81FFC2;
-    font-size: 1.4rem;
-    font-weight: 400;
-    transition: all .5s;
+    text-decoration: none;
+    color: #099763;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .2s ease-in;
 }
 
-.nav-link:hover,
-.nav-link:active {
-    color: #558564;
-    transition: all .5s;
+.nav-link:hover {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .2s ease-in;
 }
 
-.nav-bottom-ul {
-    list-style: none;
-    transform: translateY(280px);
+nav img {
+    height: 60px;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
 }
 
-.nav-bottom-ul img {
-    width: 50px;
-    height: 50px;
+section h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 40px;
 }
 
-.nav-bottom-ul span {
-    font-size: 1rem;
+p {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 110%;
+    padding-top: 10px;
+    display: inline-block;
 }
 
-.nav-logo {
-    width: 50px;
-    height: 50px;
-}
-
-
-@media screen and (max-width: 992px) {
-    .mobileMenu {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        transform: translateX(-100%);
-        transition: all ease 0.25s;
-    }
-
-    .onRight {
-        left: auto;
-        right: 0;
-        transform: translateX(100%);
-    }
-
-    .open {
-        transform: translateX(0);
-    }
-
-    .overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-color: rgba(0,0,0,0.5);
-        display: none;
-    }
-
-    .open-overlay {
-        display: block;
-    }
-}
-
-/* ////// ////// ////// */
-
-/* ////// HEADER ////// */
+/* HEADER */
 
 header {
-    height: 100vh;
+    padding-top: 70px;
+    background-color: #099763;
+    width: 100%;
+    padding-bottom: 70px;
 }
 
-.logo-img {
-    height: 400px;
-    width: 400px;
-}
-
-h1.title-header {
+header h2 {
+    font-size: 38px;
+    text-align: center;
     font-weight: 300;
-    font-size: 3rem;
 }
 
-.btn-contact {
-    color: #81FFC2;
-    background-color: transparent;
+header h2.title {
+    font-family: 'Josefin Sans', sans-serif !important;
     font-weight: 400;
-    font-size: 1.4rem;
-    border: solid 2px #81FFC2;
-    padding: 5px 15px;
-    cursor: pointer;
-    transition: all .5s;
+    font-size: 2em;
+    margin: 10px 0;
 }
 
-.btn-contact:hover {
-    color: #1D1E18;
-    background-color: #81FFC2;
-    font-weight: 400;
-    font-size: 1.4rem;
-    border: solid 2px #1D1E18;
-    padding: 5px 15px;
-    cursor: pointer;
-    transition: all .5s;
-}
-
-.btn-contact i {
-    font-size: 26px;
-}
-
-.icon__down_arrow {
-    font-size: 32px;
-    animation: arrowmove 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes arrowmove {
-    0% {transform: translateY(0px);}
-    50% {transform: translateY(15px);}
-    100% {transform: translateY(1px);}
-}
-
-/* ////// ////// ////// */
-
-
-/* ////// QUIEN SOY? ////// */
-
-.section-quiensoy {
-    height: 100vh;
-}
-
-.img-profile {
+header img {
     height: 150px;
-    width: 150;
-    border-radius: 100px;
-    border: 2px solid #81FFC2;
-    margin-top: 40px;
-}
-
-.span-subtitle {
-    font-size: 1.3rem;
-}
-
-p.p-quiensoy {
-    font-size: 1.3rem;
-    font-weight: 300;
-}
-
-.section-quiensoy a {
-    color: #81FFC2;
-    transition: .5s;
-}
-
-.section-quiensoy a:hover {
-    color: #558564;
-    transition: .5s;
-}
-
-/* ////// ////// ////// */
-
-
-/* ////// QUE HAGO? ////// */
-
-.section-quehago {
-    height: 100vh;
-}
-
-.service-box {
-    border: 2px solid #81FFC2;
-}
-
-.title-service {
-    font-size: 1.4rem;
-}
-
-.icon-service {
-    margin-top: 12px;
-    font-size: 32px;
-}
-
-.p-service {
-    font-size: 1.2rem;
-}
-
-/* ////// ////// ////// */
-
-
-/* ////// MIS TRABAJOS ////// */
-
-.section-mis-trabajos {
-    height: auto;
-}
-
-.section-mis-trabajos img {
-    width: 250px;
-    height: auto;
-    border: solid 1px #81FFC2;
-}
-
-.portfolio-box {
-    border: 2px solid #81FFC2;
-}
-
-.title-portfolio {
-    font-size: 1.4rem;
-}
-
-.icon-portfolio {
-    margin-top: 12px;
-    font-size: 32px;
-}
-
-.p-portfolio {
-    font-size: 1.2rem;
-    margin-bottom: 6px;
-}
-
-.link-portfolio {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 6px;
-    color: #81FFC2;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.link-portfolio:hover,
-.link-portfolio:active {
-    color: #558564;
-    transition: all ease .5s;
-    text-decoration: none;
-}
-
-.p-coming {
-    font-size: 1.4rem;
-    margin-bottom: 0;
-}
-
-.icon_github {
-    font-size: 40px;
-    color: #81FFC2;
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;
     display: block;
-    transition: all ease .5s;
+    margin: 0 auto;
 }
 
-.icon_github:hover,
-.icon_github:active {
-    color: #558564;
-    transition: all ease .5s;
+.p-block {
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* ////// ////// ////// */
+.social-media {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+}
 
+i {
+    color: #fff;
+    font-size: 48px;
+    transition: all .2s ease-in;
+}
 
-/* ////// CONTACTO ////// */
+.social-media i:hover {
+    color: #000;
+    font-size: 48px;
+    transition: all .2s ease-in;
+}
+
+/* header p {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 110%;
+    padding-top: 10px;
+    display: inline-block;
+} */
+
+/* SECTION - MI EXPERIENCIA */
+
+.section-experiencia {
+    height: 1000px;
+    background-color: #fff;
+    color: #000;
+    padding-top: 70px;
+    width: 100%;
+    /* background-image: url(./../img/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 300px; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    padding: 5px 0;
+    -webkit-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.35);
+    height: 230px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 3;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card h4 {
+    font-size: 22px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.card h5 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card span {
+    font-size: 16px;
+    color: #717171;
+    text-align: center;
+}
+
+.conector-line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    z-index: 1;
+    position: relative;
+}
+
+/* SECTION - CONTACTO */
 
 .section-contacto {
-    height: 100vh;
+    height: auto;
+    background-color: #099763;
+    color: #fff;
+    padding-top: 70px;
+    width: 100%;
+}
+
+.section-contacto i {
+    display: block;
+    text-align: center;
 }
 
 .section-contacto p {
-    font-weight: 300;
-    font-size: 1.3rem;
-}
-
-.contact-box {
-    border: 1px solid #81FFC2;
-    padding: 10px 15px;
-}
-
-.contact-box-social {
-    border: 1px solid #81FFC2;
-    padding: 28px;
-}
-
-.contact-social i {
-    font-size: 32px;
-}
-
-.contact-social a {
-    color: #81FFC2;
-    text-decoration: none;
-    transition: all ease .5s;
-}
-
-.contact-social a:hover {
-    color: #558564;
-    text-decoration: none;
-    transition: all ease .5s;
-}
-
-.icon_contact {
-    font-size: 40px;
-    color: #81FFC2;
-    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .mail-link {
-    color: #d3ffea;
+    color: #CBFFEC;
+    padding: 5px 20px;
+    border: 1px solid #CBFFEC;
+    border-radius: 10px;
     text-decoration: none;
-    transition: all ease .5s;
+    font-size: 120%;
+    text-align: center;
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    transition: all .2s ease-in;
 }
 
 .mail-link:hover {
-    color: #79d8aa;
+    color: #099763;
+    border: 1px solid #099763;
+    background-color: #CBFFEC;
+    transition: all .2s ease-in;
+}
+
+.section-contacto .social-media {
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+}
+
+.section-contacto i {
+    color: #fff;
+    font-size: 48px;
+    transition: all .2s ease-in;
+}
+
+.section-contacto .social-icon a {
     text-decoration: none;
-    transition: all ease .5s;
 }
 
-/* ////// ////// ////// */
-
-/* ------------------------ */
-/* ----- MEDIA QUERIES ----- */
-/* ------------------------ */
-
-/* On screens that are 576px or less */
-@media screen and (max-width: 576px) {
-
-    .logo-img {
-        height: 200px;
-        width: 200px;
-    }
-    
-    h1.title-header {
-        font-weight: 300;
-        font-size: 1.6rem;
-    }
-
-    /* ////// QUE HAGO? ////// */
-
-    .ul-techs {
-        list-style: none;
-    }
-
-    .ul-techs li {
-        display: inline-block;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .ul-techs i {
-        font-size: 40px;
-        color: #81FFC2;
-    }
-
-    .techs-p {
-        font-size: 1.4rem;
-    }
-
-    .ul-techs i:hover {
-        animation: expandIcon linear 2s infinite;
-    }
-
-    @keyframes expandIcon {
-        0% {
-            transform: scale(1.0);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(1.0);
-        }
-    }
-
-    /* ////// ////// ////// */
+.section-contacto .social-media i:hover {
+    color: #000;
+    font-size: 48px;
+    transition: all .2s ease-in;
 }
 
-/* On screens that are greater than 577px and less than 992px */
-@media screen and (min-width: 577px) and (max-width: 992px) {
+/* FOOTER */
 
-        /* ////// QUE HAGO? ////// */
-
-        .ul-techs {
-            list-style: none;
-        }
-    
-        .ul-techs li {
-            display: inline-block;
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-    
-        .ul-techs i {
-            font-size: 42px;
-            color: #81FFC2;
-        }
-
-        .techs-p {
-            font-size: 1.4rem;
-        }
-    
-        .ul-techs i:hover {
-            animation: expandIcon linear 2s infinite;
-        }
-    
-        @keyframes expandIcon {
-            0% {
-                transform: scale(1.0);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1.0);
-            }
-        }
-
-        /* ////// ////// ////// */
-
-        /* ////// CONTACTO ////// */
-
-        .section-contacto p {
-            font-weight: 300;
-            font-size: 1.5rem;
-        }
-    
-        .contact-box-social {
-            border: 1px solid #81FFC2;
-            padding: 40px 10px;
-        }
-    
-        .contact-social i {
-            font-size: 40px;
-        }
-    
-        /* ////// ////// ////// */
-  }
-
-/* On screens that are 768px or greater */
-@media screen and (min-width: 768px) {
-    p.p-quiensoy {
-        font-size: 1.4rem;
-        font-weight: 300;
-    }
+footer {
+    background-color: #57756A;
+    height: 50px;
+    width: 100%;
 }
 
-/* On screens that are 992px or greater */
-@media screen and (min-width: 992px) {
+footer p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
 
-    h2.section-title {
-        font-size: 2.2rem;
-        font-weight: 400;
-        margin-top: 90px;
-    }
+/* MEDIA QUERIES */
 
-    /* ////// NAVIGATION ////// */
-
-    nav {
-        background-color: #000;
-    }
-
-    .navbar {
-        padding: 0;
-    }
-
-    .icon__bars {
-        color: #81FFC2;
-        font-size: 32px;
-        transition: all .5s;
-    }
-
-    .icon__bars_rotated {
-        color: #81FFC2;
-        font-size: 32px;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-        transition: all .5s;
-    }
-
-    .bg-black {
-        background-color: #000;
-    }
-
+/* WIDTH FROM 992px and SMALLER */
+@media only screen and (max-width: 992px) {
     .nav-link {
-        color: #81FFC2;
-        font-size: 1.4rem;
-        font-weight: 400;
+        display: none;
     }
 
-    .nav-bottom-ul {
-        list-style: none;
-        transform: translateY(280px);
-    }
-
-    .nav-bottom-ul img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .nav-bottom-ul span {
-        font-size: 1rem;
-    }
-
-    /* ////// ////// ////// */
-
-    /* ////// QUIEN SOY? ////// */
-
-    p.p-quiensoy {
-        font-size: 1.6rem;
-        font-weight: 300;
-    }
-
-    .span-subtitle {
-        font-size: 1.6rem;
-    }
-    /* ////// ////// ////// */
-
-    /* ////// QUE HAGO? ////// */
-
-    .title-service {
-        font-size: 1.8rem;
-    }
-
-    .icon-service {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 48px;
-    }
-
-    .p-service {
-        font-size: 1.6rem;
-        text-align: justify !important;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .ul-techs {
-        list-style: none;
-    }
-
-    .techs-p {
-        font-size: 1.8rem;
-    }
-
-    .ul-techs li {
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .ul-techs i {
-        font-size: 48px;
-        color: #81FFC2;
-    }
-
-    .ul-techs i:hover {
-        animation: expandIcon linear 2s infinite;
-    }
-
-    @keyframes expandIcon {
-        0% {
-            transform: scale(1.0);
-        }
-        50% {
-            transform: scale(1.2);
-        }
-        100% {
-            transform: scale(1.0);
-        }
-    }
-
-    /* ////// ////// ////// */
-
-    /* ////// MIS TRABAJOS ////// */
-
-    .section-mis-trabajos img {
-        width: 500px;
-        height: auto;
-        border: solid 1px #81FFC2;
-    }
-
-    .title-portfolio {
-        font-size: 1.8rem;
-        font-weight: 400;
-    }
-
-    .p-portfolio {
-        font-size: 1.6rem;
-        margin-bottom: 6px;
-    }
-    
-    .link-portfolio {
-        font-size: 1.6rem;
-        font-weight: 400;
-        margin-bottom: 6px;
-        color: #81FFC2;
-        display: inline-block;
-    }
-
-    .p-coming {
-        font-size: 1.6rem;
-        margin-bottom: 0;
-    }
-
-    .icon_github {
-        font-size: 48px;
-        color: #81FFC2;
-        display: block;
-    }
-
-    /* ////// ////// ////// */
-
-
-    /* ////// CONTACTO ////// */
-
-    .section-contacto p {
-        font-weight: 300;
-        font-size: 1.6rem;
-    }
-
-    .contact-box {
-        border: 1px solid #81FFC2;
-        padding: 10px 15px;
-    }
-
-    .contact-box-social {
-        border: 1px solid #81FFC2;
-        padding: 60px 5px;
-    }
-
-    .contact-social i {
-        font-size: 48px;
-    }
-
-    /* ////// ////// ////// */
-
-}
-
-/* On screens that are 1200px or greater */
-@media screen and (min-width: 1200px) {
-
-    /* ////// CONTACTO ////// */
-
-    .contact-box-social {
-        border: 1px solid #81FFC2;
-        padding: 70px 5px;
-    }
-
-    /* ////// ////// ////// */
-}
-
-/* On screens that are 600px height or less */
-@media screen and (max-height: 600px) {
-    .mt-120 {
-        margin-top: 20px;
-    }
-
-    header {
-        margin-bottom: 80px;
-    }
-
-    section {
-        margin-bottom: 120px;
-    }
-
-    .section-mis-trabajos img {
-        width: 180px;
-        height: auto;
-        border: solid 1px #81FFC2;
-    }
 }
